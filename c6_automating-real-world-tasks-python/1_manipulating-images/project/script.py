@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 # Google IT Automation with Python Professional Certificate
-# Elmo Allistair
-# 11 Agu 2020
+# Azhar Fathurahman
+# Jan 3 2025
 
 from PIL import Image
 from glob import glob
@@ -21,6 +21,6 @@ for file in glob('ic_*'): # ignore hidden file (images/.DS_Store) from iteration
     """
     path, filename = os.path.split(file)
     filename = os.path.splitext(filename)[0] # get filename without extension
-    image.rotate(270).resize((128,128)).save('/opt/icons/{}.jpeg'.format(filename))
+    image.rotate(270).resize((128,128)).save('/opt/icons/{}'.format(filename), "JPEG")
 
-print('OK')
+print('DONE')
